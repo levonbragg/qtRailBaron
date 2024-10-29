@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'pyRailBaronjTGslJ.ui'
+## Form generated from reading UI file 'pyRailBaronxPXZnh.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.0
 ##
@@ -305,7 +305,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"RailBaron", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Source", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Destination", None))
         self.chk_rbUS.setText(QCoreApplication.translate("MainWindow", u"Rail Baron US", None))
