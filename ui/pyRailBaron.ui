@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>719</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>719</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: #c3ceda;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tab_widget">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane {
+  border: 1px solid #c3ceda;
+/*  top:-1px; */ 
+  background-color: rgb(115, 143, 167);
+  
+	color: rgb(0, 75, 112);
+} 
+
+QTabBar::tab {
+  background-color: rgb(115, 143, 167);
+  border: 1px solid #c3ceda; 
+  padding: 15px;
+} 
+
+QTabBar::tab:selected { 
+  
+	color: rgb(195, 206, 218);
+  background-color: #0c4160;
+/*  margin-bottom: -1px;  */
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_payout">
+       <property name="styleSheet">
+        <string notr="true">QTabWidget{
+	background-color: rgb(115, 143, 167);
+}</string>
+       </property>
+       <attribute name="title">
+        <string>Payouts</string>
+       </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>140</y>
+          <width>67</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 75, 112);</string>
+        </property>
+        <property name="text">
+         <string>Source</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>140</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 75, 112);</string>
+        </property>
+        <property name="text">
+         <string>Destination</string>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="lv_source">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>256</width>
+          <height>440</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>256</width>
+          <height>440</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QListWidget{
+        color: rgb(0, 75, 112);
+    }
+    QScrollBar:vertical {
+            border: 0px solid #999999;
+            background:#c3ceda;
+            width:10px;    
+            margin: 0px 0px 0px 0px;
+        }
+        QScrollBar::handle:vertical {         
+       
+            min-height: 0px;
+          	border: 0px solid red;
+			border-radius: 4px;
+			background-color: #0c4160;
+        }
+        QScrollBar::add-line:vertical {       
+            height: 0px;
+            subcontrol-position: bottom;
+            subcontrol-origin: margin;
+        }
+        QScrollBar::sub-line:vertical {
+            height: 0 px;
+            subcontrol-position: top;
+            subcontrol-origin: margin;
+        }</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="lv_destination">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>170</y>
+          <width>256</width>
+          <height>440</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>256</width>
+          <height>440</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QListWidget{
+        color: rgb(0, 75, 112);
+    }
+    QScrollBar:vertical {
+            border: 0px solid #999999;
+            background:#c3ceda;
+            width:10px;    
+            margin: 0px 0px 0px 0px;
+        }
+        QScrollBar::handle:vertical {         
+       
+            min-height: 0px;
+          	border: 0px solid red;
+			border-radius: 4px;
+			background-color: #0c4160;
+        }
+        QScrollBar::add-line:vertical {       
+            height: 0px;
+            subcontrol-position: bottom;
+            subcontrol-origin: margin;
+        }
+        QScrollBar::sub-line:vertical {
+            height: 0 px;
+            subcontrol-position: top;
+            subcontrol-origin: margin;
+        }</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>20</y>
+          <width>141</width>
+          <height>85</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QCheckBox" name="chk_rbUS">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 75, 112);</string>
+           </property>
+           <property name="text">
+            <string>Rail Baron US</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chk_bcUS">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 75, 112);</string>
+           </property>
+           <property name="text">
+            <string>Box Cars US</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chk_bcUK">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 75, 112);</string>
+           </property>
+           <property name="text">
+            <string>Box Cars UK</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>170</y>
+          <width>221</width>
+          <height>68</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="lbl_payout_symbol">
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>36</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(12, 65, 96);
+color: rgb(195, 206, 218);</string>
+           </property>
+           <property name="text">
+            <string>$</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_payout">
+           <property name="font">
+            <font>
+             <pointsize>36</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(12, 65, 96);
+color: rgb(195, 206, 218);</string>
+           </property>
+           <property name="text">
+            <string>999999</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::TextFormat::AutoText</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>20</y>
+          <width>178</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 75, 112);</string>
+           </property>
+           <property name="text">
+            <string>Payout Multiplier</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDoubleSpinBox" name="doubleSpinBox">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(12, 65, 96);
+color: rgb(195, 206, 218);</string>
+           </property>
+           <property name="decimals">
+            <number>1</number>
+           </property>
+           <property name="minimum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>3.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.500000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_destination">
+       <attribute name="title">
+        <string>Destination Selection</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>801</width>
+          <height>402</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="tbl_region">
+           <property name="minimumSize">
+            <size>
+             <width>350</width>
+             <height>400</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableWidget{
+        border: 0px;
+        padding: 5px;
+        selection-background-color: rgb(11, 65, 95);
+        selection-color: #c3ceda;
+        color: rgb(0, 75, 112);
+        alternate-background-color: #adb6c1;
+    }</string>
+           </property>
+           <property name="lineWidth">
+            <number>0</number>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectionBehavior::SelectItems</enum>
+           </property>
+           <property name="rowCount">
+            <number>11</number>
+           </property>
+           <property name="columnCount">
+            <number>3</number>
+           </property>
+           <attribute name="horizontalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <column/>
+           <column/>
+           <column/>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tbl_destination">
+           <property name="minimumSize">
+            <size>
+             <width>350</width>
+             <height>400</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableWidget{
+        border: 0px;
+        padding: 5px;
+        selection-background-color: rgb(11, 65, 95);
+        selection-color: #c3ceda;
+        color: rgb(0, 75, 112);
+        alternate-background-color: #adb6c1;
+    }
+</string>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::SelectionMode::NoSelection</enum>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+           </property>
+           <property name="rowCount">
+            <number>11</number>
+           </property>
+           <property name="columnCount">
+            <number>3</number>
+           </property>
+           <attribute name="horizontalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <column/>
+           <column/>
+           <column/>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 75, 112);</string>
+        </property>
+        <property name="text">
+         <string>Select Region:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>40</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 75, 112);</string>
+        </property>
+        <property name="text">
+         <string>Destinations Table:</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
