@@ -249,6 +249,12 @@ color: rgb(195, 206, 218);</string>
           </property>
           <item>
            <widget class="QLabel" name="lbl_payout_symbol">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="maximumSize">
              <size>
               <width>35</width>
@@ -271,6 +277,12 @@ color: rgb(195, 206, 218);</string>
           </item>
           <item>
            <widget class="QLabel" name="lbl_payout">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="maximumSize">
              <size>
               <width>300</width>
@@ -412,6 +424,9 @@ color: rgb(195, 206, 218);</string>
          <layout class="QVBoxLayout" name="verticalLayout_4">
           <item>
            <widget class="QLabel" name="label_6">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 75, 112);</string>
+            </property>
             <property name="text">
              <string>Game Notes:</string>
             </property>

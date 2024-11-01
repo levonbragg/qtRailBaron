@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'pyRailBaronNaIZhB.ui'
+## Form generated from reading UI file 'pyRailBaronXPvYEJ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.0
 ##
@@ -152,6 +152,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.lbl_payout_symbol = QLabel(self.tab_payout)
         self.lbl_payout_symbol.setObjectName(u"lbl_payout_symbol")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.lbl_payout_symbol.sizePolicy().hasHeightForWidth())
+        self.lbl_payout_symbol.setSizePolicy(sizePolicy1)
         self.lbl_payout_symbol.setMaximumSize(QSize(35, 16777215))
         font1 = QFont()
         font1.setPointSize(36)
@@ -163,6 +168,8 @@ class Ui_MainWindow(object):
 
         self.lbl_payout = QLabel(self.tab_payout)
         self.lbl_payout.setObjectName(u"lbl_payout")
+        sizePolicy1.setHeightForWidth(self.lbl_payout.sizePolicy().hasHeightForWidth())
+        self.lbl_payout.setSizePolicy(sizePolicy1)
         self.lbl_payout.setMaximumSize(QSize(300, 16777215))
         self.lbl_payout.setFont(font1)
         self.lbl_payout.setStyleSheet(u"background-color: rgb(12, 65, 96);\n"
@@ -259,6 +266,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.label_6 = QLabel(self.tab_payout)
         self.label_6.setObjectName(u"label_6")
+        self.label_6.setStyleSheet(u"color: rgb(0, 75, 112);")
 
         self.verticalLayout_4.addWidget(self.label_6)
 
