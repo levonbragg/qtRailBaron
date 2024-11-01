@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'pyRailBaronXPvYEJ.ui'
+## Form generated from reading UI file 'pyRailBaronLYhlej.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.0
 ##
@@ -17,9 +17,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QDoubleSpinBox,
     QGridLayout, QHBoxLayout, QHeaderView, QLabel,
-    QListWidget, QListWidgetItem, QMainWindow, QSizePolicy,
-    QSpacerItem, QTabWidget, QTableWidget, QTableWidgetItem,
-    QTextEdit, QVBoxLayout, QWidget)
+    QListWidget, QListWidgetItem, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QTabWidget, QTableWidget,
+    QTableWidgetItem, QTextEdit, QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -73,6 +73,80 @@ class Ui_MainWindow(object):
 "}")
         self.gridLayout_2 = QGridLayout(self.tab_payout)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setSpacing(0)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.widget_2 = QWidget(self.tab_payout)
+        self.widget_2.setObjectName(u"widget_2")
+        self.widget_2.setMinimumSize(QSize(120, 80))
+        self.lbl_payout = QLabel(self.widget_2)
+        self.lbl_payout.setObjectName(u"lbl_payout")
+        self.lbl_payout.setGeometry(QRect(30, 10, 165, 66))
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.lbl_payout.sizePolicy().hasHeightForWidth())
+        self.lbl_payout.setSizePolicy(sizePolicy1)
+        self.lbl_payout.setMaximumSize(QSize(300, 16777215))
+        font = QFont()
+        font.setPointSize(36)
+        self.lbl_payout.setFont(font)
+        self.lbl_payout.setStyleSheet(u"background-color: rgb(12, 65, 96);\n"
+"color: rgb(195, 206, 218);")
+        self.lbl_payout.setTextFormat(Qt.TextFormat.AutoText)
+        self.lbl_payout.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
+        self.lbl_payout_symbol = QLabel(self.widget_2)
+        self.lbl_payout_symbol.setObjectName(u"lbl_payout_symbol")
+        self.lbl_payout_symbol.setGeometry(QRect(2, 10, 28, 66))
+        sizePolicy1.setHeightForWidth(self.lbl_payout_symbol.sizePolicy().hasHeightForWidth())
+        self.lbl_payout_symbol.setSizePolicy(sizePolicy1)
+        self.lbl_payout_symbol.setMaximumSize(QSize(35, 16777215))
+        self.lbl_payout_symbol.setFont(font)
+        self.lbl_payout_symbol.setStyleSheet(u"background-color: rgb(12, 65, 96);\n"
+"color: rgb(195, 206, 218);")
+
+        self.horizontalLayout_2.addWidget(self.widget_2)
+
+
+        self.gridLayout_2.addLayout(self.horizontalLayout_2, 2, 3, 1, 1)
+
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label_3 = QLabel(self.tab_payout)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setMinimumSize(QSize(120, 0))
+        self.label_3.setStyleSheet(u"color: rgb(0, 75, 112);")
+
+        self.horizontalLayout_3.addWidget(self.label_3)
+
+        self.doubleSpinBox = QDoubleSpinBox(self.tab_payout)
+        self.doubleSpinBox.setObjectName(u"doubleSpinBox")
+        self.doubleSpinBox.setMinimumSize(QSize(75, 30))
+        font1 = QFont()
+        font1.setPointSize(9)
+        self.doubleSpinBox.setFont(font1)
+        self.doubleSpinBox.setStyleSheet(u"background-color: rgb(12, 65, 96);\n"
+"color: rgb(195, 206, 218);")
+        self.doubleSpinBox.setDecimals(1)
+        self.doubleSpinBox.setMinimum(1.000000000000000)
+        self.doubleSpinBox.setMaximum(3.000000000000000)
+        self.doubleSpinBox.setSingleStep(0.500000000000000)
+
+        self.horizontalLayout_3.addWidget(self.doubleSpinBox)
+
+
+        self.gridLayout_2.addLayout(self.horizontalLayout_3, 0, 1, 1, 1)
+
+        self.label_2 = QLabel(self.tab_payout)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setStyleSheet(u"color: rgb(0, 75, 112);")
+
+        self.gridLayout_2.addWidget(self.label_2, 1, 1, 1, 1)
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_2.addItem(self.horizontalSpacer, 0, 3, 1, 1)
+
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setSpacing(1)
         self.verticalLayout.setObjectName(u"verticalLayout")
@@ -100,91 +174,76 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addLayout(self.verticalLayout, 0, 0, 1, 1)
 
-        self.horizontalLayout_3 = QHBoxLayout()
-        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.label_3 = QLabel(self.tab_payout)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setMinimumSize(QSize(120, 0))
-        self.label_3.setStyleSheet(u"color: rgb(0, 75, 112);")
+        self.verticalLayout_4 = QVBoxLayout()
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.label_6 = QLabel(self.tab_payout)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setMaximumSize(QSize(16777215, 25))
+        self.label_6.setStyleSheet(u"color: rgb(0, 75, 112);")
 
-        self.horizontalLayout_3.addWidget(self.label_3)
+        self.verticalLayout_4.addWidget(self.label_6)
 
-        self.doubleSpinBox = QDoubleSpinBox(self.tab_payout)
-        self.doubleSpinBox.setObjectName(u"doubleSpinBox")
-        self.doubleSpinBox.setMinimumSize(QSize(75, 30))
-        font = QFont()
-        font.setPointSize(9)
-        self.doubleSpinBox.setFont(font)
-        self.doubleSpinBox.setStyleSheet(u"background-color: rgb(12, 65, 96);\n"
-"color: rgb(195, 206, 218);")
-        self.doubleSpinBox.setDecimals(1)
-        self.doubleSpinBox.setMinimum(1.000000000000000)
-        self.doubleSpinBox.setMaximum(3.000000000000000)
-        self.doubleSpinBox.setSingleStep(0.500000000000000)
+        self.textEdit = QTextEdit(self.tab_payout)
+        self.textEdit.setObjectName(u"textEdit")
+        self.textEdit.setMinimumSize(QSize(0, 300))
+        self.textEdit.setMaximumSize(QSize(16777215, 400))
+        self.textEdit.setStyleSheet(u"QTextEdit{\n"
+"        color: rgb(0, 75, 112);\n"
+"    }\n"
+"    QScrollBar:vertical {\n"
+"            border: 0px solid #999999;\n"
+"            background:#c3ceda;\n"
+"            width:10px;    \n"
+"            margin: 0px 0px 0px 0px;\n"
+"        }\n"
+"        QScrollBar::handle:vertical {         \n"
+"       \n"
+"            min-height: 0px;\n"
+"          	border: 0px solid red;\n"
+"			border-radius: 4px;\n"
+"			background-color: #0c4160;\n"
+"        }\n"
+"        QScrollBar::add-line:vertical {       \n"
+"            height: 0px;\n"
+"            subcontrol-position: bottom;\n"
+"            subcontrol-origin: margin;\n"
+"        }\n"
+"        QScrollBar::sub-line:vertical {\n"
+"            height: 0 px;\n"
+"            subcontrol-position: top;\n"
+"            subcontrol-origin: margin;\n"
+"        }")
 
-        self.horizontalLayout_3.addWidget(self.doubleSpinBox)
+        self.verticalLayout_4.addWidget(self.textEdit)
 
+        self.widget = QWidget(self.tab_payout)
+        self.widget.setObjectName(u"widget")
+        self.widget.setMaximumSize(QSize(16777215, 60))
+        self.horizontalLayout_6 = QHBoxLayout(self.widget)
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.pb_save = QPushButton(self.widget)
+        self.pb_save.setObjectName(u"pb_save")
+        self.pb_save.setStyleSheet(u"color: rgb(195, 206, 218);\n"
+"background-color: #0c4160;")
 
-        self.gridLayout_2.addLayout(self.horizontalLayout_3, 0, 1, 1, 1)
+        self.horizontalLayout_6.addWidget(self.pb_save)
 
-        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.pb_open = QPushButton(self.widget)
+        self.pb_open.setObjectName(u"pb_open")
+        self.pb_open.setStyleSheet(u"color: rgb(195, 206, 218);\n"
+"background-color: #0c4160;")
 
-        self.gridLayout_2.addItem(self.horizontalSpacer, 0, 3, 1, 1)
-
-        self.label = QLabel(self.tab_payout)
-        self.label.setObjectName(u"label")
-        self.label.setStyleSheet(u"color: rgb(0, 75, 112);")
-
-        self.gridLayout_2.addWidget(self.label, 1, 0, 1, 1)
-
-        self.label_2 = QLabel(self.tab_payout)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setStyleSheet(u"color: rgb(0, 75, 112);")
-
-        self.gridLayout_2.addWidget(self.label_2, 1, 1, 1, 1)
-
-        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-        self.gridLayout_2.addItem(self.horizontalSpacer_3, 2, 2, 1, 1)
-
-        self.horizontalLayout_2 = QHBoxLayout()
-        self.horizontalLayout_2.setSpacing(0)
-        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.lbl_payout_symbol = QLabel(self.tab_payout)
-        self.lbl_payout_symbol.setObjectName(u"lbl_payout_symbol")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.lbl_payout_symbol.sizePolicy().hasHeightForWidth())
-        self.lbl_payout_symbol.setSizePolicy(sizePolicy1)
-        self.lbl_payout_symbol.setMaximumSize(QSize(35, 16777215))
-        font1 = QFont()
-        font1.setPointSize(36)
-        self.lbl_payout_symbol.setFont(font1)
-        self.lbl_payout_symbol.setStyleSheet(u"background-color: rgb(12, 65, 96);\n"
-"color: rgb(195, 206, 218);")
-
-        self.horizontalLayout_2.addWidget(self.lbl_payout_symbol)
-
-        self.lbl_payout = QLabel(self.tab_payout)
-        self.lbl_payout.setObjectName(u"lbl_payout")
-        sizePolicy1.setHeightForWidth(self.lbl_payout.sizePolicy().hasHeightForWidth())
-        self.lbl_payout.setSizePolicy(sizePolicy1)
-        self.lbl_payout.setMaximumSize(QSize(300, 16777215))
-        self.lbl_payout.setFont(font1)
-        self.lbl_payout.setStyleSheet(u"background-color: rgb(12, 65, 96);\n"
-"color: rgb(195, 206, 218);")
-        self.lbl_payout.setTextFormat(Qt.TextFormat.AutoText)
-        self.lbl_payout.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
-
-        self.horizontalLayout_2.addWidget(self.lbl_payout)
+        self.horizontalLayout_6.addWidget(self.pb_open)
 
 
-        self.gridLayout_2.addLayout(self.horizontalLayout_2, 2, 3, 1, 1)
+        self.verticalLayout_4.addWidget(self.widget)
 
-        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
-        self.gridLayout_2.addItem(self.horizontalSpacer_2, 2, 4, 1, 1)
+        self.verticalLayout_4.addItem(self.verticalSpacer)
+
+
+        self.gridLayout_2.addLayout(self.verticalLayout_4, 3, 2, 1, 2)
 
         self.horizontalLayout_5 = QHBoxLayout()
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
@@ -258,51 +317,15 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addLayout(self.horizontalLayout_5, 2, 0, 3, 2)
 
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.gridLayout_2.addItem(self.verticalSpacer, 4, 4, 1, 1)
+        self.gridLayout_2.addItem(self.horizontalSpacer_2, 2, 4, 1, 1)
 
-        self.verticalLayout_4 = QVBoxLayout()
-        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
-        self.label_6 = QLabel(self.tab_payout)
-        self.label_6.setObjectName(u"label_6")
-        self.label_6.setStyleSheet(u"color: rgb(0, 75, 112);")
+        self.label = QLabel(self.tab_payout)
+        self.label.setObjectName(u"label")
+        self.label.setStyleSheet(u"color: rgb(0, 75, 112);")
 
-        self.verticalLayout_4.addWidget(self.label_6)
-
-        self.textEdit = QTextEdit(self.tab_payout)
-        self.textEdit.setObjectName(u"textEdit")
-        self.textEdit.setStyleSheet(u"QTextEdit{\n"
-"        color: rgb(0, 75, 112);\n"
-"    }\n"
-"    QScrollBar:vertical {\n"
-"            border: 0px solid #999999;\n"
-"            background:#c3ceda;\n"
-"            width:10px;    \n"
-"            margin: 0px 0px 0px 0px;\n"
-"        }\n"
-"        QScrollBar::handle:vertical {         \n"
-"       \n"
-"            min-height: 0px;\n"
-"          	border: 0px solid red;\n"
-"			border-radius: 4px;\n"
-"			background-color: #0c4160;\n"
-"        }\n"
-"        QScrollBar::add-line:vertical {       \n"
-"            height: 0px;\n"
-"            subcontrol-position: bottom;\n"
-"            subcontrol-origin: margin;\n"
-"        }\n"
-"        QScrollBar::sub-line:vertical {\n"
-"            height: 0 px;\n"
-"            subcontrol-position: top;\n"
-"            subcontrol-origin: margin;\n"
-"        }")
-
-        self.verticalLayout_4.addWidget(self.textEdit)
-
-
-        self.gridLayout_2.addLayout(self.verticalLayout_4, 3, 2, 1, 2)
+        self.gridLayout_2.addWidget(self.label, 1, 0, 1, 1)
 
         self.tab_widget.addTab(self.tab_payout, "")
         self.tab_destination = QWidget()
@@ -409,15 +432,17 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"RailBaron", None))
+        self.lbl_payout.setText(QCoreApplication.translate("MainWindow", u"999999", None))
+        self.lbl_payout_symbol.setText(QCoreApplication.translate("MainWindow", u"$", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Payout Multiplier", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Destination", None))
         self.chk_rbUS.setText(QCoreApplication.translate("MainWindow", u"Rail Baron US", None))
         self.chk_bcUS.setText(QCoreApplication.translate("MainWindow", u"Box Cars US", None))
         self.chk_bcUK.setText(QCoreApplication.translate("MainWindow", u"Box Cars UK", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Payout Multiplier", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Source", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Destination", None))
-        self.lbl_payout_symbol.setText(QCoreApplication.translate("MainWindow", u"$", None))
-        self.lbl_payout.setText(QCoreApplication.translate("MainWindow", u"999999", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Game Notes:", None))
+        self.pb_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        self.pb_open.setText(QCoreApplication.translate("MainWindow", u"Open", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Source", None))
         self.tab_widget.setTabText(self.tab_widget.indexOf(self.tab_payout), QCoreApplication.translate("MainWindow", u"Payouts", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Select Region:", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Destinations Table:", None))
